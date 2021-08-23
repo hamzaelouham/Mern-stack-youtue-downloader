@@ -1,0 +1,122 @@
+:root{
+    --main-padding:5px;
+    --main-margin:5px;
+    --button-color:#111;
+    --main-color:#fff;
+}
+*{
+    margin: 0;
+    padding: 0;
+    scroll-behavior: smooth;
+}
+body{
+    height: 100vh;
+    background-color: var(--main-color);
+}
+.container{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 60px 1fr 1fr 50px;
+    grid-template-areas: 
+    'header'
+    'download'
+    'download-info'
+    'footer';
+    grid-gap: 20px;
+    height: 100vh;
+}
+header{
+    grid-area: header;
+    color: var(--main-color);
+    background-color: var(--button-color);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.download{
+    grid-area: download;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+.download .center {
+    flex:0.60;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    height: 200px;
+    margin: 0 auto;
+    padding: 10px;
+    border-radius:2px; 
+    border: #63d08d 1px solid;
+}
+.input{
+    border: #63d08d 1px solid;
+    padding: 9px;
+    margin: 10px;
+    border-radius: 5px;
+}
+.downloadBtn{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+.downBtn{
+    outline: none;
+    border: none;
+    padding: 10px;
+    margin: 10px;
+    border-radius:2px; 
+    height: 40px; 
+    width: 196px;
+    background-color: #63d08d;
+    text-transform: uppercase;
+    cursor: pointer;
+    transition: .4s ease-in-out;
+    text-decoration:none;
+    text-transform: uppercase;
+}
+.downBtn:hover{
+     background-color: #111;
+}
+.btn{
+    outline: none;
+    border: none;
+    padding: 5px;
+    margin: 10px;
+    border-radius:2px; 
+    height: 40px;
+    color: #fff;
+    background-color: #63d08d;
+    text-transform: uppercase;
+    cursor: pointer;
+    transition: .4s ease-in-out;
+}
+.btn:hover{
+    background-color: #111;
+}
+.download-info{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    padding: 10px;
+    border-radius:2px; 
+   
+}
+.download-info .info{
+   border: #63d08d 1px solid;
+background-color: #5555;
+margin: 0 auto;
+display: flex;
+flex-direction: row;
+} 
+footer{
+    grid-area: footer;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    color: #fff;
+    background: #111;
+}
