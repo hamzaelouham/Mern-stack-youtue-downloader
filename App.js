@@ -1,5 +1,5 @@
 const express = require("express");
-const middleware = require("./middleware/midddleware.js");
+const middleware = require("./middleware/middleware.js");
 const ApiRoute = require("./routes/api.js");
 const staticRoute = require("./routes/static.js");
 
